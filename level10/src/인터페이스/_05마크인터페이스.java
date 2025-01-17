@@ -121,7 +121,5 @@ public class _05마크인터페이스 {
 		
 		scv.repairUnit(scv );
 		
-		
-		
 	}
 }
