@@ -115,7 +115,8 @@ public class _05마크인터페이스 {
 		System.out.println(tank);
 		tank.hp -= 30;
 		System.out.println(tank);
-		
+		tank.hp -= 100;
+		System.out.println(tank);
 		dropShip.hp -= 30;
 		soldier.hp -= 40;
 		
