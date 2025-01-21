@@ -56,10 +56,10 @@ public class MemberDAO {
 			String data = "";
 			for(TreeSet ts : treeSets) {
 				for(Object m : treeSets) {
+					System.out.println(m);
 					data += m;
 				}
 			}
-			data = data.substring(0,data.length()-1);
 			return data;
 	};
 	
