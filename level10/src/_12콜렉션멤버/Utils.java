@@ -44,6 +44,7 @@ public class Utils {
 	
 	public void saveMemberList() {
 		String data = MemberDAO.getInstance().getMemberList();
+		data = data.substring(0,data.length()-1);
 		try(FileWriter fw = new FileWriter(filePath)){
 			fw.write(data);
 			System.out.println("파일 저장 성공");

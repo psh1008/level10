@@ -11,7 +11,6 @@ public class ActionLoad implements Action{
 		String temp[] = data.split("\n");
 		for(int i=0;i<temp.length;i++) {
 			String info[] = temp[i].split("/");
-			System.out.println(info[0] + info[1]+ info[2]);
 			MemberDAO.getInstance().loadMemberData(info[0], info[1], info[2]);
 		}
 	}
