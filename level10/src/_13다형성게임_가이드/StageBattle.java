@@ -51,6 +51,7 @@ public class StageBattle extends Stage {
 				}
 			}
 		} else if (sel == 2) {
+			
 		}
 	}
 

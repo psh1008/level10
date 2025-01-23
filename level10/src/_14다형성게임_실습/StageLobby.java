@@ -4,7 +4,6 @@ public class StageLobby extends Stage {
 
 	@Override
 	public boolean update() {
-
 		while(true) {
 		try {
 			System.out.println("====[LOBBY]====");
@@ -13,11 +12,13 @@ public class StageLobby extends Stage {
 			int sel = GameManager.scan.nextInt();
 			if(sel == 1) {
 				GameManager.nextStage = "BATTLE";
-				return false;
-			}if(sel == 2) {
+			}else if(sel == 2) {
 				GameManager.nextStage = "";
-				return false;
+			}else {
+				System.out.println("다시 입력해 주세요");
+				continue;
 			}
+			return false;
 		}catch(Exception e){
 			System.out.println("입력 오류");
 		}finally {
